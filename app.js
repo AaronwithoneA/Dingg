@@ -1,6 +1,7 @@
 import express from 'express';
+import path from 'path';
 
-var app = express();
+const app = express();
 
 app.use(express.static('public'));
 
