@@ -14,3 +14,6 @@ app.get('/', (req, res) => {
 http.listen(PORT, () => {
   console.log(`listening on ${PORT}`)
 })
+
+const chatServer = require('./lib/chatServer')
+chatServer.listen(http)
