@@ -16,4 +16,4 @@ http.listen(PORT, () => {
 })
 
 const chatServer = require('./lib/chatServer')
-chatServer.listen(http)
+chatServer.listen(http);
