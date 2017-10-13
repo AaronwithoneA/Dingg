@@ -1,7 +1,7 @@
 import express from 'express';
 import path from 'path';
 const http = require('http').Server(app)
-
+import chatServer from './lib/chatServer';
 const app = express();
 const PORT = 8000;
 
@@ -15,5 +15,4 @@ http.listen(PORT, () => {
   console.log(`listening on ${PORT}`)
 })
 
-const chatServer = require('./lib/chatServer')
 chatServer.listen(http);
