@@ -31,3 +31,5 @@ ChatUI.prototype.addMsg = function (msg) {
   newMessage.textContent = msg
   this.msgList.appendChild(newMessage)
 }
+
+export default ChatUI;
