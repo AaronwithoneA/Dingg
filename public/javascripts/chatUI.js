@@ -8,3 +8,7 @@ function ChatUI(socket) {
   this.roomList = document.querySelector('ul#room-list')
    this.room = document.querySelector('#room')
 }
+
+ChatUI.prototype.getInput = function () {
+  return this.input.value
+}
