@@ -25,3 +25,9 @@ ChatUI.prototype.submitHandler = function () {
     this.input.value = ''
   })
 }
+
+ChatUI.prototype.addMsg = function (msg) {
+  const newMessage = document.createElement('li')
+  newMessage.textContent = msg
+  this.msgList.appendChild(newMessage)
+}
