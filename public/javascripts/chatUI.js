@@ -12,3 +12,7 @@ function ChatUI(socket) {
 ChatUI.prototype.getInput = function () {
   return this.input.value
 }
+
+ChatUI.prototype.sendMsg = function (room) {
+  this.chat.sendMessage(room, this.getInput())
+}
