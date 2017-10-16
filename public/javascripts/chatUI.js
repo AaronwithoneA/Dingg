@@ -16,3 +16,11 @@ ChatUI.prototype.getInput = function () {
 ChatUI.prototype.sendMsg = function (room) {
   this.chat.sendMessage(room, this.getInput())
 }
+
+ChatUI.prototype.submitHandler = function () {
+  this.form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    this.processUserInput()
+    this.input.value = ''
+  })
+}
